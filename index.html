@@ -9,15 +9,15 @@
 
     <link href='https://fonts.googleapis.com/css?family=Coral Pixels' rel='stylesheet'>
 
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 
     <style>
 
         @font-face {
             font-family: 'BoldPixels Local'; /* ¡Este es el nombre que usarás en font-family! */
+            /* RUTA CORREGIDA: Asumimos que estos archivos están en el mismo nivel que 'index.html' o dentro de una carpeta 'fonts' que no se muestra aquí. Si están en una carpeta 'fonts', se debería usar 'fonts/BoldPixels.otf' */
             src: url('BoldPixels.otf') format('opentype'),
                  url('BoldPixels.ttf') format('truetype');
-            /* Agregamos los dos formatos para mejor compatibilidad entre navegadores. */
             font-weight: normal;
             font-style: normal;
         }
@@ -33,13 +33,13 @@
             width: 250px;    /* Un ancho razonable */
             opacity: 0.8;    /* Lo hace ligeramente transparente */
         }
-</style>
+    </style>
 
 </head>
 <body style="background-image: url(Imagenes/Fondo_Seccion.gif); background-size: cover; background-repeat: no-repeat; margin: 0; padding: 0;">
     <div class="container">
 
-        <audio id="audioFondo" autoplay loop hidden> <!--Se reproduce de forma automatica-->
+        <audio id="audioFondo" autoplay loop hidden> 
         <source src="Audio/Dreamcore_Music.mp3" type="audio/mpeg">
             Tu navegador no soporta el elemento de audio.
         </audio>
