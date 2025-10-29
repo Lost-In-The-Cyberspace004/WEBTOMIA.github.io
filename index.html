@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEBTOMIA</title>
+
+    <link rel="icon" href="Imagenes/Nya_Cat.gif"/>
+
+    <link href='https://fonts.googleapis.com/css?family=Coral Pixels' rel='stylesheet'>
+
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <style>
+
+        @font-face {
+            font-family: 'BoldPixels Local'; /* ¡Este es el nombre que usarás en font-family! */
+            src: url('BoldPixels.otf') format('opentype'),
+                 url('BoldPixels.ttf') format('truetype');
+            /* Agregamos los dos formatos para mejor compatibilidad entre navegadores. */
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        .contenedores {
+            max-width: 80%; /* Define el ancho máximo deseado */
+        }
+
+        #audioFondo {
+            position: fixed; /* Mantiene el control fijo en la pantalla */
+            bottom: 10px;    /* 10px desde el borde inferior */
+            right: 10px;     /* 10px desde el borde derecho */
+            width: 250px;    /* Un ancho razonable */
+            opacity: 0.8;    /* Lo hace ligeramente transparente */
+        }
+</style>
+
+</head>
+<body style="background-image: url(Imagenes/Fondo_Seccion.gif); background-size: cover; background-repeat: no-repeat; margin: 0; padding: 0;">
+    <div class="container">
+
+        <audio id="audioFondo" autoplay loop hidden> <!--Se reproduce de forma automatica-->
+        <source src="Audio/Dreamcore_Music.mp3" type="audio/mpeg">
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+
+        <header>
+            <div class="container">
+                <div class="mx-auto w-75">
+                    <img class="card-img img-fluid" src="Imagenes/Banner_Principal.jpg">
+                </div>
+            </div>
+
+            <div class="Contenedores text-center text-light p-3 ms-5 me-5 mt-1">
+                <p style="font-family:'BoldPixels Local';">
+                    <strong>
+                        (warning: this page contains mistakes, I am not an English speaker and my knowledge of English is basic, I am using a TraslatorTraslator)
+                    </strong>
+                </p>
+            </div>
+        </header>
+    
+        <section class="container mt-1 w-75">
+            <div class="mx-auto">
+                <img class="card-img img-fluid" style="height: 435px;" src="Imagenes/Banner_1.png">
+            </div>
+        </section>
+
+        <div class="Contenedores text-center text-light p-3 ms-5 me-5 mt-1" style="margin-left: 5.9%; margin-right: 5.9%;">
+            <p style="font-family:'BoldPixels Local';">
+                <strong>
+                    Webtomia is an  "interactive" web comic  (limitations in that ughhh) it contains gifs and images  that i create or images from pinterest 
+                </strong>
+            </p>
+        </div>
+
+        <section class="container mt-1 w-75">
+            <div class="mx-auto">
+                <img class="card-img img-fluid" style="height: 350px;" src="Imagenes/Nya_Cat.gif">
+            </div>
+        </section>
+
+        <div class="Contenedores text-center text-light p-3 ms-5 me-5 mt-1" style="margin-left: 5.9%; margin-right: 5.9%;">
+            <p style="font-family:'BoldPixels Local';">
+                <strong>
+                    What is Webtomia about? Webtomia is a interactive webcomics that take place in the same universe! Decisions don't affect story (probably) the stories will be jumbled up like puzzles! Soooo put some work into that little mind of your, okay? let's not rush! One step at a time, because I get dizzy too ughhh, anyways! I present to you the first story in work on Webtomia:
+                </strong>
+            </p>
+            <hr>
+            <p style="font-family:'BoldPixels Local';">
+                Webtomia's first webcomic: (in) somnia 
+                Cómic synopsis: you accidentally installed a malware virus with..... Form? Because you tried to install the APK for your favorite app on a  suspicious website , now she controls your computer, what's next?'
+            </p>
+        </div>
+
+        <section class="container mt-1 w-75">
+            <div class="mx-auto">
+                <img class="card-img img-fluid" style="height: 500px;" src="Imagenes/Computer_Image.png">
+            </div>
+        </section>        
+
+        <div class="Contenedores text-center text-light p-3 ms-5 me-5 mt-1 mb-5" style="margin-left: 5.9%; margin-right: 5.9%;">
+            <p style="font-family:'BoldPixels Local';">
+                <strong>
+                    Thank you for visiting my page. It's currently under development and content is being added.
+
+                    <br>
+                    Keep dreaming...  
+
+                    <br>
+
+                    @Webtomia 2025
+                    CfGaMeS - Cassy project
+                </strong>
+            </p>
+            <hr>
+            <a  class="btn btn-link text-light" style="font-family: 'BoldPixels Local';" href="#">
+                <button class = "btn btn-dark ps-5 pe-5 text-center" style="background-image: url(Imagenes/Fondo_Casa_Espacial.gif); background-size: cover;">
+                    Start
+                </button>
+            </a>
+        </div>
+
+
+        <div class="container text-center">
+            <a class="btn btn-link" style="font-family: 'BoldPixels Local';" href="https://lost-in-the-cyberspace004.github.io/CassyWeb/" target="_blank">
+                <button class="btn text-light ps-5 pe-5 mb-5 text-center" style="background-image: url(Imagenes/Fondo_Windows_XP.gif); background-size: cover;">
+                    My personal website
+                </button>
+            </a>
+        </div>
+
+    </div>
+</body>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+
+<script>
+    function iniciarAudio() {
+        const audio = document.getElementById('audioFondo');
+        // El método .play() solo funciona si se llama dentro de una acción del usuario (como un click)
+        audio.play().catch(error => {
+            console.log("No se pudo iniciar la reproducción: ", error);
+        });
+    }
+</script>
+
+</html>
